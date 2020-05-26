@@ -1,0 +1,123 @@
+@function px2rem($px) {
+    @return $px*320/$designWidth/20+rem;
+}
+
+$designWidth: 1080; // 设计图按照1080来
+// 全局背景色及带颜色的字体都是这个
+$globalColor: #3384ef;
+$globalGray: #999999;
+.color-gray {
+    color: $globalGray;
+}
+
+.color-blue {
+    color: $globalColor;
+}
+
+.bg-blue {
+    background-color: $globalColor;
+}
+
+.page-content {
+    padding-top: px2rem(130);
+}
+
+// 页头
+.page-header {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 10000;
+    height: px2rem(130);
+    text-align: center;
+    line-height: px2rem(130);
+    color: #ffffff;
+    font-size: px2rem(48);
+    i {
+        position: absolute;
+        left: px2rem(65);
+    }
+}
+
+.save-btn {
+    height: px2rem(120);
+    width: px2rem(720);
+    text-align: center;
+    line-height: px2rem(120);
+    border-radius: px2rem(60);
+    color: $globalColor;
+    margin: 0 auto;
+    margin-top: px2rem(80);
+    border: 1px solid $globalColor;
+    font-size: px2rem(48);
+    font-weight: bold;
+    letter-spacing: px2rem(10);
+}
+
+.font65 {
+    font-size: px2rem(42);
+    white-space: nowrap;
+}
+
+// .tips {
+//     position: absolute;
+//     top: px2rem(-8);
+//     right: px2rem(-8);
+//     z-index: 10;
+//     color: #ffffff;
+//     font-size: px2rem(30);
+//     min-width: px2rem(30);
+//     text-align: center;
+//     background: #ff0000;
+//     padding: px2rem(3) px2rem(3);
+//     line-height: px2rem(30);
+//     border-radius: px2rem(18);
+// }
+// .img-wrapper {
+//     position: relative;
+//     width: px2rem(126);
+//     height: px2rem(126);
+//     border-radius: px2rem(10);
+//     margin-right: px2rem(36);
+// }
+// .head-img {
+//     width: px2rem(126);
+//     height: px2rem(126);
+//     position: relative;
+//     border-radius: px2rem(10);
+//     // background: #ffff00; // 测试用
+// }
+.slide-right-enter-active,
+.slide-right-leave-active,
+.slide-left-enter-active,
+.slide-left-leave-active {
+    will-change: transform;
+    transition: all 250ms;
+    position: absolute;
+    width: 100%;
+}
+
+.slide-right-enter {
+    opacity: 0;
+    transform: translate(-100%, 0);
+    width: 100%;
+}
+
+.slide-right-leave-active {
+    opacity: 0;
+    transform: translate(100%, 0);
+    width: 100%;
+}
+
+.slide-left-enter {
+    opacity: 0;
+    transform: translate(100%, 0);
+    width: 100%;
+}
+
+.slide-left-leave-active {
+    opacity: 0;
+    transform: translate(-100%, 0);
+    width: 100%;
+}
