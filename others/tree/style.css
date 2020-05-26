@@ -1,0 +1,73 @@
+div,
+span,
+p,
+i {
+    box-sizing: border-box;
+    color: #202329;
+    font-size: 18px;
+    font-family: Helvetica Neue, Helvetica, PingFang SC, Hiragino Sans GB, Microsoft YaHei, SimSun, sans-serif;
+}
+
+.wrapper {
+    height: 500px;
+    width: 700px;
+    border: thin solid #a1a1a1;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.tree-item-wrapper {
+    margin-left: 19px;
+}
+
+
+/* .tree-item-wrapper .tree-item-wrapper {
+    margin-left: 50px;
+}
+
+.tree-item-wrapper .tree-item-wrapper .tree-item-wrapper {
+    margin-left: 70px;
+} */
+
+.expand-icon {
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    background: url("./down-icon.png") no-repeat center center;
+    background-size: cover;
+    position: absolute;
+    top: 8px;
+    left: -19px;
+}
+
+.tree-title {
+    user-select: none;
+    cursor: pointer;
+    padding: 4px 2px;
+    position: relative;
+}
+
+
+.right-icon {
+    transform: rotate(-90deg);
+}
+
+.table-header {
+    display: flex;
+    border-bottom: 1px solid #BEBEBE;
+    /* background: #BFEFFF; */
+}
+
+.table-title,
+.db-version,
+.up-date {
+    padding: 4px 0;
+    text-align: center;
+    text-align: center;
+}
+
+.tree-wrapper {
+    width: 100%;
+    padding-left: 45px;
+}
