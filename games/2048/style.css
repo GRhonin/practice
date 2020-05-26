@@ -1,0 +1,100 @@
+body,html,div{
+    margin: 0;
+    padding: 0; 
+}
+.content{
+    background: #bbada0;
+    width: 360px;
+    height: 360px;
+    margin: 0 auto;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+}
+.rows{
+    display: flex;
+}
+.cols{
+    width: 80px;
+    height: 80px;
+    position: relative;
+    background: #ccc0b2;
+    margin: 5px;
+}
+.block{
+    width: 80px;
+    height: 80px;
+    text-align: center;
+    line-height: 80px;
+    font-size: 20px;
+}
+.restart{
+    height: 40px;
+    width: 80px;
+    font-size: 16px;
+    background: #cccccc;
+    line-height: 40px;
+    text-align: center;
+    margin: 20px auto;
+    border: thin solid #999999;
+    border-radius: 2px;
+    user-select: none;
+}
+.num2{
+    background: #eee4da;
+    color: #000000;
+}
+.num4{
+    background: #ece0c8;
+    color: #000000;
+}
+.num8{
+    background: #F2B179;
+    color: #ffffff;
+}
+.num16{
+    background: #F59565;
+    color: #ffffff;
+}
+.num32{
+    background: #F57C5F;
+    color: #ffffff;
+}
+.num64{
+    background: #FA6E50;
+    color: #ffffff;
+}
+.num128{
+    background: #F1CC6A;
+    color: #ffffff;
+}
+.num256{
+    background: #F2B179;
+    color: #ffffff;
+}
+.num512{
+    background: #F2B179;
+    color: #ffffff;
+}
+.num2024{
+    background: #dd9922;
+    color: #ffffff;
+}
+.num2048{
+    background: #dd4422;
+    color: #ffffff;
+}
+.num4096{
+    background: #666666;
+    color: #ffffff;
+}
+.num8162{
+    background: #333333;
+    color: #ffffff;
+}
+.num16384{
+    background: #000000;
+    color: #ffffff;
+}
+
